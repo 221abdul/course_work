@@ -1,0 +1,58 @@
+.main3-page{
+    
+    height: 650px;
+}
+
+.main-container3{
+    width: 990px;
+    margin: 0 auto;
+}
+h1{
+    color:#fff;
+}
+
+input  {
+    margin-top: 25px;
+    height: 40px;
+    width: 285px;
+    border-radius: 4px;
+    border: none;
+    font-size: 19px;
+    
+    
+}
+input:focus{
+    outline: none;
+}
+
+
+
+label{
+    margin-right: 20px;
+}
+.email{
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    margin-left: 22px;
+}
+
+.teleph{
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    margin-left: 57px;
+}
+
+.reb_btn{
+    padding: 12px 20px;
+    background-color:floralwhite;
+    color:#26A69A;
+    border-radius: 8px;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.method{
+    font-size: 15px;
+    margin-left: 160px;
+}
