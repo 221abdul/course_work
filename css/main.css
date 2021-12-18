@@ -1,0 +1,419 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-page{
+    height: 730px;
+    background: url(/img/bg.png) center center/cover no-repeat;
+}
+.header {
+    border-bottom: 1px solid #ffffff;
+    height: 68px;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    padding-top: 8px;
+    cursor: pointer;
+}
+
+.logo{
+    transition: 0.5s; /* Время эффекта */
+    text-align: center; 
+  }
+  .logo:hover {
+    transform: scale(1.1); /* Увеличиваем масштаб */
+  }
+
+
+.header-container {
+    width: 990px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.login{
+    margin-left: auto;
+    display: flex; 
+}
+.login img{
+    vertical-align: middle;
+}
+.user{
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 32px;
+  
+}
+
+.user{
+    transition: 0.5s; /* Время эффекта */
+    text-align: center; 
+  }
+  .user:hover {
+    transform: scale(1.1); /* Увеличиваем масштаб */
+  }
+
+/* Main */
+
+
+.main-container {
+
+    width: 990px;
+    margin: 0 auto;
+    display: flex;
+   
+    align-items: center;
+
+
+    padding-top: 115px;
+    padding-bottom: 185px;
+
+      
+}
+
+
+
+.main-contant {
+    width: 580px;
+    margin-left: 70px;
+    height: 405px;
+}
+
+
+
+.main-title {
+    font-weight: 800;
+    font-size: 48px;
+   
+    color: #ffffff;
+  
+    margin-top: 0;
+    
+}
+
+.main-text{
+    margin-top: 45px;
+}
+
+.main-text p {
+    animation-duration: 1.5s;
+    animation-name: slidein;
+  }
+
+
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
+.btn{
+
+    
+    
+}
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 20px 55px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #26A69A;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+.main-text{
+    margin-bottom: 48px;
+}
+.main-text p a{
+    text-decoration: none; 
+}
+.main-contant p{
+   font-weight: normal;
+   font-size: 19px;
+   color: #ffffff;
+
+}
+/* footer */
+.footer {
+    display: flex;
+    height: 72px;
+    color: #000000;
+    background: #ffffff;
+}
+.footer-container {
+    width: 990px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.footer-copyright {
+ font-weight: normal;
+ font-size: 14px;
+ line-height: 24px; 
+}
+
+.footer-socials {
+    display: flex;
+    margin-right: 16px;
+}
+.footer-socials:last-child{
+    margin-right: 0;
+}
+
+
+/* frame regist */
+
+.main2-page{
+    height: 1350px;
+    background: url(/img/foto2.png) center center/cover no-repeat;
+    
+    
+}
+.form-reg{
+    margin: 0 auto;
+    width: 980px;
+}
+.heading{
+    color:#fff;
+    font-size: 35px;
+    margin-top: 51px;
+}
+
+.personal-data{
+    border-style: solid;
+    border-radius:12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    background-color:#fff;
+    border-color: #fff;
+    color:#5D5C5C;
+}
+
+
+
+
+input  {
+    margin-top: 25px;
+    height: 40px;
+    width: 285px;
+    border-radius: 4px;
+    border: none;
+    font-size: 19px;
+    
+    
+}
+input:focus{
+    outline: none;
+}
+
+
+
+label{
+    margin-right: 20px;
+}
+.last-name{
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    margin-left: 55px;
+}
+.user-name{
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    margin-left: 100px;
+}
+
+    .patrony-mic{
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    margin-left: 55px;
+    
+}    
+    .birthday{
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+
+}
+
+.brt-date{
+    font-size: 19px;
+    color: #000000;
+    padding-left: 17px;
+
+}
+
+
+.type-select{
+    margin-top: 25px;
+    height: 40px;
+    width: 285px;
+    border-radius: 4px;
+    border: none;
+    color: #A3A1A1;
+    font-size: 18px;
+    padding-left: 17px;
+    
+}
+
+
+.type-policy{
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    margin-left: 38px;
+}
+.policy-num{
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    margin-left: 82px;
+}
+
+input::placeholder{
+    font-size: 19px;
+    color: #A3A1A1;
+    padding-left: 17px;
+
+}
+
+
+.email{
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    margin-left: 22px;
+}
+
+.teleph{
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    margin-left: 57px;
+}
+.pass{
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    margin-left: 67px;
+}
+
+.pass-yet{
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    
+
+    
+}
+.passyet{
+    width: 275px;
+}
+
+.span-banner{
+    font-size: 12px;
+    color: red;
+    margin-left: 160px;
+}
+.chek{
+    margin-top: 0;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+
+}
+
+
+.checkbox{
+    margin-top: 20px;
+    margin-left: 160px;
+}
+.text{
+    color: blanchedalmond;
+
+}
+
+.btn-reg{
+    text-decoration: none;
+    font-size: 19px;
+    color: #26A69A;
+    background:#fff;
+    border-radius: 37px;
+    padding: 20px 40px ;
+    
+   
+}
+.button-reg{
+    margin-top: 50px ;
+    text-align: center;
+    
+}
+
+
+
