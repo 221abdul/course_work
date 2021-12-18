@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medhouse</title>
+    <link rel="shortcut icon" href="/img/title.ico" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body class="page">
+    <div class="main2-page">
+<header class="header">
+    <div class="header-container">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+        </div>
+        <div class="login">
+            <a href="#" class="user"> <img src="img/User_circle.png" alt="" class="user-circle"> Вход </a>
+            <a href="reg.html" class="user"> <img src="img/User_fill_add.png" alt="" class="user-fill"> Регистрация </a>
+        </div>
+    </div>
+</header>
+
+
+
+    <div class="form-reg">
+    <h2 class="heading" >Регистрация</h2>
+   <h3 class="personal-data">Личные данные</h3>
+
+
+   <form action="">
+    
+    <div class="group">
+        <label class="last-name" for="surname">Фамилия</label>
+        <input  type="text" id="surname">
+    </div>
+    <div class="group">
+        <label class="user-name" for="username">Имя</label>
+        <input type="text" id="username">
+    </div>
+    <div class="group">
+        <label class="patrony-mic" for="patronymic">Фамилия</label>
+        <input type="text" id="patronymic">
+    </div>
+     <div class="group">
+        <label class="birthday" for="date">Дата рождения</label>
+        <input class="brt-date" type="date" id="date" />
+    </div>
+   
+
+
+  </form>
+
+   
+  <h3 class="personal-data">Полис</h3>
+
+  <form action="">
+    
+    <div class="group">
+        <label class="type-policy" for="policy">Тип полиса</label>
+        <select class="type-select" name="select"> <!--Supplement an id here instead of using 'name'-->
+            <option value="value1">Полис 1</option>
+            <option value="value2" selected>Полис ОМС нового образца</option>
+            <option value="value3">Полис 3</option>
+          </select>
+    </div>
+    <div class="group">
+        <label class="policy-num" for="number">Полис</label>
+        <input placeholder="Номер" class="input-num" type="number" id="policy">
+    </div>
+    
+   
+
+
+  </form>
+
+  <h3 class="personal-data">Данные для идентификации</h3>
+  <form action="">
+    
+    <div class="group">
+        <label class="email" for="email">Почта(email)</label>
+
+        <input type="email" id="email"
+       pattern=".+@globex\.com" size="30" required>
+    </div>
+    <div class="group">
+        <label class="teleph" for="phone">Tелефон</label>
+        <input type="tel" id="phone" name="phone"
+       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+       required>
+    </div>
+    <div class="group">
+        <label class="pass" for="userPassword">Пароль</label>
+        <input id="userPassword" type="password">
+        
+    </div>
+        <span class="span-banner">не менее 8 символов</span>
+    <div class="group">
+        <label class="pass-yet" for="userPassword">Пароль еще раз</label>
+        <input class="passyet" id="userPassword" type="password">
+    </div>
+
+  </form>
+    
+
+
+
+  <div class="checkbox">
+    <input class="chek" type="checkbox" id="click">
+    <label for="click" class="text"> я ознокомился с <a href="#"><font color='black' >
+        правилами предоставления услуги</font></a>   и принимаю их </label>
+  </div>
+        <div class="button-reg">
+        <a class="btn-reg" href="#">Регистрация</a>
+        </div>
+
+
+
+
+
+</div>
+
+    </div>
+    
+    <footer class="footer footer-reg">
+
+        <div class="footer-container">
+    
+            <div class="footer-copyright">
+    
+                <p> © 2021 Портал пациента. Копирование материалов запрещено. </p>
+                 
+            </div>
+    
+            <div class="footer-socials">
+                <a class="footer-socials" href="#"><img src="img/Instagram.svg" alt="inst"></a>
+                <a class="footer-socials" href="#"><img src="img/Twitter.svg" alt="inst"></a>
+                <a class="footer-socials" href="#"><img src="img/Youtube.svg" alt="inst"></a>
+                <a class="footer-socials" href="#"><img src="img/Dribbble.svg" alt="inst"></a>
+            </div>
+    
+    
+        </div>
+    
+    
+    </footer>
+    </body>
+</html>
